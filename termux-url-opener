@@ -1,0 +1,48 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Copyright 2020 Al Tasin
+
+echo -e "\033[1;31m"
+echo    "__   __          _         _            "
+echo    "\ \ / /__  _   _| |_ _   _| |__   ___   "
+echo    " \ V / _ \| | | | __| | | | '_ \ / _ \  "
+echo    "  | | (_) | |_| | |_| |_| | |_) |  __/  "
+echo    "  |_|\___/ \__,_|\__|\__,_|_.__/ \___|  "
+echo "  "
+echo -e "\033[1;34m"
+echo "Made by Al-Tasin"
+echo " "
+echo -e "\033[1;32m"
+echo "For audio press 1"
+echo "For  360p press 2"
+echo "For  480p press 3"
+echo "For  720p press 4"
+echo "For 1080p press 5"
+
+command='-no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f'
+read option
+
+if [ "$option" -eq "1" ]
+then
+    echo "$command 140" > ~/.config/youtube-dl/config
+    youtube-dl $1
+
+elif [ "$option" -eq "2" ]
+then
+    echo "$command \"best[height<=360]\"" > ~/.config/youtube-dl/config
+    youtube-dl $1
+
+elif [ "$option" -eq "3" ]
+then
+    echo "$command \"best[height<=480]\"" > ~/.config/youtube-dl/config
+    youtube-dl $1
+
+elif [ "$option" -eq "4" ]
+then
+    echo "$command \"best[height<=720]\"" > ~/.config/youtube-dl/config
+    youtube-dl $1
+
+elif [ "$option" -eq "5" ]
+then
+    echo "$command \"best[height<=1080]\"" > ~/.config/youtube-dl/config
+    youtube-dl $1
+fi
