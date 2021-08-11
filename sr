@@ -1,0 +1,5 @@
+# apt-get update && apt-get install -y linux-headers - $ (uname -r) 
+# cp /media/cd-rom/VBoxLinuxAdditions.run / root / 
+# chmod 755 /root/VBoxLinuxAdditions.run 
+# cd / root 
+# ./VBoxLinuxAdditions.run 
