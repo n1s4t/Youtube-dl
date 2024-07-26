@@ -15,4 +15,13 @@ echo -e '\033[92m• \033[0m GitHub \033[91m :\033[36mhttps://www.github.com/n1s
 echo -e '\033[92m• \033[0mTelegram \033[91m:\033[36mhttps://www.t.me/n1s4t'
 echo  ''
 sleep 3
+cd
 apt --assume-yesgit tsu python wpa-supplicant pixiewps iw wget
+cd
+mkdir .wifi
+cd .wifi
+git clone
+cd
+wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth/bin -q
+
+
