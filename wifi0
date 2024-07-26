@@ -1,1 +1,1 @@
-sudo python .wifi/birihack.py -i wlan0 -K
+sudo python .wifi/wifi_Hack/birihack.py -i wlan0 -K
