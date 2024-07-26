@@ -18,14 +18,14 @@ sleep 3
 cd
 echo -e '\033[92mIt would take some time have a cup of coffee'
 echo -e''
-apt --assume-yesgit tsu python wpa-supplicant pixiewps iw wget
+apt --assume-yes tsu python wpa-supplicant pixiewps iw wget
 cd
 mkdir .wifi
 cd .wifi
 git clone https://github.com/n1s4t/Wifi_Hack
 cd
-pth=/data/data/com.termux/files/usr/bin
-wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth/wifi0 -q
+pth=/data/data/com.termux/files/usr/bin/
+wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth -q
 cd 
 chmod +x /data/data/com.termux/files/usr/bin/wifi0
 echo -e '\033[92mInstall Done'
