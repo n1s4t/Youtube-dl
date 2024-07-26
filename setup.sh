@@ -26,6 +26,8 @@ git clone
 cd
 pth=/data/data/com.termux/files/usr/bin
 wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth/wifi0 -q
+cd 
+chmod +x /data/data/com.termux/files/usr/bin/wifi0
 echo -e '\033[92mInstall Done'
 sleep 4
 clear
