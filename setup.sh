@@ -16,12 +16,20 @@ echo -e '\033[92m• \033[0mTelegram \033[91m:\033[36mhttps://www.t.me/n1s4t'
 echo  ''
 sleep 3
 cd
+echo -e '\033[92mIt would take some time have a cup of coffee'
+echo -e''
 apt --assume-yesgit tsu python wpa-supplicant pixiewps iw wget
 cd
 mkdir .wifi
 cd .wifi
 git clone
 cd
-wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth/bin -q
+pth=/data/data/com.termux/files/usr/bin
+wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth/wifi0 -q
+echo -e '\033[92mInstall Done'
+sleep 4
+clear
+echo -e ' Run wifi0'
+sleep 5
 
 
