@@ -22,7 +22,7 @@ apt --assume-yesgit tsu python wpa-supplicant pixiewps iw wget
 cd
 mkdir .wifi
 cd .wifi
-git clone
+git clone https://github.com/n1s4t/Wifi_Hack
 cd
 pth=/data/data/com.termux/files/usr/bin
 wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth/wifi0 -q
