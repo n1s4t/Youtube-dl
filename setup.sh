@@ -18,7 +18,7 @@ sleep 3
 cd
 echo -e '\033[92mIt would take some time have a cup of coffee'
 echo -e''
-apt --assume-yes tsu python wpa-supplicant pixiewps iw wget
+apt --assume-yes install tsu python wpa-supplicant pixiewps iw wget
 cd
 mkdir .wifi
 cd .wifi
