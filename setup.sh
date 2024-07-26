@@ -18,8 +18,11 @@ sleep 3
 cd
 echo -e '\033[92mIt would take some time have a cup of coffee'
 echo -e''
-apt update && apt upgrade -y > /dev/null 2>&1
+echo -e '\033[93mPkg Updating & Upgrading'
+apt update > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1
+echo -e '\033[93mInstalling Root-Repo'
 pkg install -y root-repo > /dev/null 2>&1
+echo -e '\033[93mInstalling Other Packages'
 apt --assume-yes install tsu python wpa-supplicant pixiewps iw > /dev/null 2>&1
 pkg install wget -y > /dev/null 2>&1
 cd
