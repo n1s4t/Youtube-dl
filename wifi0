@@ -1,1 +1,1 @@
-sudo python /data/data/com.termux/files/home/.wifi/Wifi_Hack/birihack.py -i wlan0 -K
+sudo python /data/data/com.termux/files/home/.wifi/Wifi_Hack/wps-wifi.py -i wlan0 -K
