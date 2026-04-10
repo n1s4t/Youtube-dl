@@ -19,7 +19,7 @@ cd
 echo -e '\033[92mIt would take some time have a cup of coffee'
 echo -e''
 echo -e '\033[93mPkg Updating & Upgrading'
-apt update > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1
+apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1
 echo -e '\033[93mInstalling Root-Repo'
 pkg install -y root-repo > /dev/null 2>&1
 echo -e '\033[93mInstalling Other Packages'
@@ -34,6 +34,9 @@ pth=/data/data/com.termux/files/usr/bin/
 wget https://raw.githubusercontent.com/n1s4t/Youtube-dl/master/wifi0 -P $pth -q
 cd 
 chmod +x /data/data/com.termux/files/usr/bin/wifi0
+python3 -m venv myenv
+source myenv/bin/activate
+pip install pyqrcode
 echo -e '\033[92mInstall Done'
 sleep 4
 clear
